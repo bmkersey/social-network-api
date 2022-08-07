@@ -14,7 +14,7 @@ const thoughtController = {
   },
   //get single thought by ID
   getThoughtById({ params }, res) {
-    Thought.findOne({ _id: params.userId })
+    Thought.findOne({ _id: params.thoughtId })
     .select('-__v')
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
@@ -64,7 +64,7 @@ const thoughtController = {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
       { $push: { reactions: body } },
-      { new: true, runValidators: true }
+      { new: true }
     )
     .then(dbThoughtData => res.json(dbThoughtData))
     .catch(err => res.json(err));

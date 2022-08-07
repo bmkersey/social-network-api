@@ -9,19 +9,19 @@ router
 
 //endpoint api/thoughts/<thoughtID>
 router
-  .route('/:thoughtID')
+  .route('/:thoughtId')
   .get(getThoughtById)
   .put(updateThought)
   .delete(deleteThought)
 
 //endpoint api/thoughts/<thoughtID>/reactions
 router
-  .route('/:thoughtID/reactions')
+  .route('/:thoughtId/reactions')
   .post(createReaction)
 
 //endpoint api/thoughts/<thoughtID>/reactions/<reactionID>
 router
-  .route('/:thoughtID/reactions/:reactionID')
+  .route('/:thoughtId/reactions/:reactionId')
   .delete(deleteReaction)
 
 
