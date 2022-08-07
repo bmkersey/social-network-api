@@ -16,7 +16,7 @@ router
 
 //end  point /api/user/<userId>/<friendId>
 router 
-  .route('/:userId/:friendId')
+  .route('/:userId/friends/:friendId')
   .post(addFriend)
   .delete(deleteFriend)
 
