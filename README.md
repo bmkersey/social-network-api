@@ -43,5 +43,5 @@
   Email: bmkersey@gmail.com  
   GitHub: [bmkersey](https://github.com/bmkersey)  
   
-  ## Walkthrough
+  ## Walkthrough 
   [Click here for Walkthrough Video!](https://app.castify.com/view/f4f45299-cf83-4a10-a615-d3894f686616)
